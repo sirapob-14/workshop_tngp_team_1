@@ -1,10 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func main() {
 	minus(50, 40)
-	mod(5, 2)
+	squareroot(4)
 	divide(100, 10)
 	sum(2, 3)
 	multiply(40, 50)
@@ -13,16 +16,15 @@ func minus(a int, b int) {
 	fmt.Printf("a - b = %d + %d = %d\n", a, b, a-b)
 }
 
-func mod(a, b int) {
-	result := a % b
-	output := fmt.Sprintf("a %% b = %d %% %d = %d", a, b, result)
-	fmt.Println(output)
+func squareroot(a int) {
+	sqrt := math.Sqrt(float64(a))
+	fmt.Printf("Sqrt(a) = Sqrt(%d) = %.2f\n", a, sqrt)
 }
 
 func divide(a, b int) {
 	if b == 0 {
 		fmt.Println("Error: Division by zero")
-		return 
+		return
 	}
 
 	fmt.Printf("a/b = %d/%d = %d \n", a, b, a/b)
