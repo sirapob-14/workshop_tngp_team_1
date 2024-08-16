@@ -21,7 +21,8 @@ func mod(a, b int) {
 
 func divide(a, b int) {
 	if b == 0 {
-		fmt.Println("Cannot divided by 0")
+		fmt.Println("Error: Division by zero")
+		return 
 	}
 
 	fmt.Printf("a/b = %d/%d = %d \n", a, b, a/b)
