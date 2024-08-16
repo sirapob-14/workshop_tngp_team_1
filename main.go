@@ -7,7 +7,7 @@ func main() {
 	mod(5, 2)
 }
 func minus(a int, b int) {
-	fmt.Printf("%d - %d = %d + %d = %d", a, b, a, b, a-b)
+	fmt.Printf("a - b = %d + %d = %d\n", a, b, a-b)
 }
 
 func mod(a, b int) {
