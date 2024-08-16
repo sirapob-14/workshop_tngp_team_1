@@ -7,6 +7,7 @@ func main() {
 	minus(50, 40)
 	mod(5, 2)
 	divide(100,10)
+	sum(2, 3)
 }
 func minus(a int, b int) {
 	fmt.Printf("a - b = %d + %d = %d\n", a, b, a-b)
@@ -25,4 +26,9 @@ func divide(a, b int){
 
 	fmt.Printf("a/b = %d/%d = %d \n",a ,b, a/b)
  }
- 
+
+func sum(a int, b int) {
+	sum := a+b
+	fmt.Println("sum is: ", sum)
+}
+
